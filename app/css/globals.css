@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:floralwhite ;
+}
+
+.dashboardHeader {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dashboardHeader h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.dashboardContainer, .dashboardContainerFooter {
+  display: flex; /* Allinea gli elementi figli in orizzontale */
+  justify-content: space-between; /* Spaziatura tra le sezioni */
+  align-items: flex-start; /* Allineamento in alto */
+  gap: 20px; /* Distanza tra le sezioni */
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  max-width: 1200px;
+  min-width: 1200px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.dashboardContainerFooter .card{
+  height: 320px;
+}
+
+.dashboardContenutoSX {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.dashboardContenutoDX {
+  width: 75%;
+  display: flex; /* Aggiunto per evitare float */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.cardsContainerPrevGiorno{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+
+.card { 
+  border-radius: 8px;
+  border: 3px saddlebrown solid;  
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #fff;
+  width: 100%;
+  background-color: saddlebrown;
+  border-radius: 4px;
+  margin: 0px;
+  padding: 5px 0 5px 0;
+}
+
+.valore{
+  font-size: 1.8rem;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+#precip h2, #temp-min h2, #temp-max h2, #umidita h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*----- PRECIPITAZIONI -----*/
+#precip .valore{ color: navy; }
+#precip h2 { background-color: navy !important; }
+#precip{ 
+  margin-top: 20px;
+  border: 3px navy solid !important; 
+}
+
+/*----- TEMPERATURA MINIMA -----*/
+#temp-min .valore{  color: blue; }
+#temp-min h2 { background-color: blue !important; }
+#temp-min{ border: 3px blue solid !important;}
+
+/*----- TEMPERATURA MASSIMA -----*/
+#temp-max .valore{ color: red; }
+#temp-max h2 { background-color: red !important; }
+#temp-max{ border: 3px red solid !important; }
+
+/*----- TEMPERATURA UMIDITà -----*/
+#umidita .valore{ color: purple; }
+#umidita h2 { background-color: purple !important; }
+#umidita{ border: 3px purple solid !important; }
+
+.ds, .minMax{
+  font-weight: bold;
+  color: black;
+  margin: 0px auto;
+}
+
+#stima-raccolto p{
+  margin: 5px !important;
+}
+
+#stima-guadagno { color: green;  }
+
+#selvarieta{
+  padding: 8px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto 10px auto;
+  appearance: none;
+}

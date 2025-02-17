@@ -1,0 +1,84 @@
+
+.header{
+  display: flex; /* Allinea gli elementi figli in orizzontale */
+  justify-content: space-between; /* Spaziatura tra le sezioni */
+  align-items: flex-start; /* Allineamento in alto */
+  gap: 20px; /* Distanza tra le sezioni */
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  max-width: 1200px;
+  min-width: 1200px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 0px;
+  
+}
+
+.logo, .selezionaData{ margin: auto 0px auto 0px; }
+
+.meseSelezionato {
+  margin:auto;
+  text-align: center;
+}
+
+.meseSelezionato p{
+  margin-top: 30px;
+   margin-bottom: 0px;
+}
+.meseSelezionato h1{
+  margin-top: 0px;
+  color:saddlebrown;
+}
+
+.selezionaData h2{ margin-bottom: 0px; }
+
+.logo img{
+    float: left;
+    margin-top: 15px;
+    height: 60px;
+    
+}
+
+.containerCalendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 15px;
+
+}
+
+.calendario {
+  padding: 8px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.freccia {
+  background-color: saddlebrown;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.freccia:hover { background-color: black; }
+
+
+.webcamContainer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.webcamVideo {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
